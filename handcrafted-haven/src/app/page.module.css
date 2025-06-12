@@ -108,6 +108,17 @@ a.secondary {
   flex-shrink: 0;
 }
 
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: var(--foreground);
+  color: var(--background);
+  padding: 20px;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
