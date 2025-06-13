@@ -1,6 +1,11 @@
-export default async function ProductPage({ params }: { params: { productId: string } }) {
-    const { productId } = params;
-    return (
-        <div>Product {productId}</div>
-    )
+type Props = {
+  params: {
+    productId: string;
+  };
+};
+
+export default function ProductPage({ params }: Props) {
+  const { productId } = params;
+
+  return <div>Product ID: {productId}</div>;
 }
