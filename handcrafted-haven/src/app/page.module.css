@@ -108,15 +108,37 @@ a.secondary {
   flex-shrink: 0;
 }
 
-.sidebar {
+.screen {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 250px;
+  right: 0;
+  width: 85%;
   height: 100%;
   background-color: var(--foreground);
   color: var(--background);
   padding: 20px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 100%;
+  background-color: var(--background);
+  padding: 20px;
+}
+
+.sideLink {
+  padding: 1rem 0rem;
+  text-decoration: none;
+  font-size: 15px;
+  color: var(--foreground);
+  display: block;
+}
+
+.dashboard {
+  color: rgb(0, 0, 0);
 }
 
 /* Enable hover only on non-touch devices */
